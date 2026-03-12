@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap');
+/* Fonts loaded via <link> in HTML — no @import needed */
 
 :root {
     --red: #b74b4b;
@@ -60,7 +60,7 @@ header {
     left: 0;
     width: 100%;
     padding: 1.4rem 9%;
-    background: rgba(8, 8, 8, 0.75);
+    background: rgba(8, 8, 8, 0.3);
     backdrop-filter: blur(18px) saturate(1.5);
     -webkit-backdrop-filter: blur(18px) saturate(1.5);
     border-bottom: 1px solid rgba(183, 75, 75, 0.15);
@@ -114,8 +114,15 @@ nav a.active {
 section {
     min-height: 100vh;
     padding: 6rem 9% 5rem;
+}
+
+.home-img,
+.home-content {
     animation: fadeUp 0.7s ease both;
 }
+
+.home-img { animation-delay: 0.1s; }
+.home-content { animation-delay: 0.2s; }
 
 /* ─── HOME ───────────────────────────────── */
 .home {
@@ -151,7 +158,6 @@ section {
     border-radius: 50%;
     position: relative;
     z-index: 1;
-    animation: fadeUp 0.8s 0.1s ease both;
 }
 
 .home-img img {
@@ -173,7 +179,6 @@ section {
 
 .home-content {
     z-index: 1;
-    animation: fadeUp 0.8s 0.2s ease both;
 }
 
 .home-content h1 {
@@ -630,10 +635,10 @@ span { color: var(--red); }
     header {
         flex-direction: column;
         padding: 1.2rem 2rem;
-        /* Simpler background on mobile — backdrop-filter is GPU-heavy */
-        backdrop-filter: none;
-        -webkit-backdrop-filter: none;
-        background: rgba(8, 8, 8, 0.97) !important;
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        background: rgba(8, 8, 8, 0.45) !important;
+        border-bottom-color: transparent;
     }
 
     nav {
@@ -742,5 +747,4 @@ span { color: var(--red); }
 @media (max-width: 768px) {
     body::before { display: none; }
     .progress .bar span { animation: none; }
-    @keyframes growBar { from { transform: scaleX(1); } }
 }
