@@ -1,67 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="main.jpg">
-    <title>Contact</title>
+    <title>Contact — Ernest</title>
 </head>
 <body>
     <header>
         <a href="index.html" class="logo">Ernest.</a>
-
         <nav>
-            <a href="index.html"> Home</a>
-            <a href="services.html" >Services</a>
-            <a href="skills.html" >Skills</a>
-            <a href="education.html" >Education</a>
-            <a href="experience.html" >Experience</a>
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="skills.html">Skills</a>
+            <a href="education.html">Education</a>
+            <a href="experience.html">Experience</a>
             <a href="contact.html" class="active">Contact</a>
         </nav>
     </header>
+
     <section class="contact" id="contact">
-    <h2 class="heading">Contact <span>Me</span></h2>
+        <h2 class="heading">Contact <span>Me</span></h2>
 
-    <form action="https://formspree.io/f/xzdrleoq" method="POST">
-        <div class="input-box">
-    <label for="name"></label>
-            <input type="text" placeholder="Full Name" name="user_name" required>
-
-    <label for="email"></label>
-            <input type="email" placeholder="Email Address" name="user_email" required>
-        </div>
-        
-        <div class="input-box">
-            <!-- Inline style used to make the phone number full width -->
-    <label for="phone"></label>
-            <input type="tel" placeholder="Mobile Number" name="user_Admission_Number" required style="width: 100%;">
-        </div>
-        
-        <div class="services-box">
-            <h3>Type of Service Required:</h3>
-            <div class="checkbox-group">
-                <label>
-                    <input type="checkbox" name="service" value="Photography"> Photography
-                </label>
-                <label>
-                    <input type="checkbox" name="service" value="Videography"> Videography
-                </label>
-                <label>
-                    <input type="checkbox" name="service" value="Web Development"> Web Development
-                </label>
+        <form action="https://formspree.io/f/xzdrleoq" method="POST">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name" name="user_name" required>
+                <input type="email" placeholder="Email Address" name="user_email" required>
             </div>
-        </div>
 
-        <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-        <input type="submit" value="Send Message" class="btn">
-    </form>
-</section>
+            <div class="input-box">
+                <input type="tel" placeholder="Mobile Number" name="user_Admission_Number" required style="width: 100%;">
+            </div>
+
+            <div class="services-box">
+                <h3>Type of Service Required</h3>
+                <div class="checkbox-group">
+                    <label>
+                        <input type="checkbox" name="service" value="Photography"> Photography
+                    </label>
+                    <label>
+                        <input type="checkbox" name="service" value="Videography"> Videography
+                    </label>
+                    <label>
+                        <input type="checkbox" name="service" value="Web Development"> Web Development
+                    </label>
+                </div>
+            </div>
+
+            <textarea name="message" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+    </section>
 </body>
 </html>

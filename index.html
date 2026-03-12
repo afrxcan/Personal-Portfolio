@@ -1,43 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="main.jpg">
-    <title>Portfolio Website</title>
+    <title>Ernest — Portfolio</title>
 </head>
 <body>
     <header>
         <a href="index.html" class="logo">Ernest.</a>
-
         <nav>
-            <a href="index.html" class="active"> Home</a>
-            <a href="services.html" >Services</a>
-            <a href="skills.html" >Skills</a>
-            <a href="education.html" >Education</a>
-            <a href="experience.html" >Experience</a>
-            <a href="contact.html" >Contact</a>
+            <a href="index.html" class="active">Home</a>
+            <a href="services.html">Services</a>
+            <a href="skills.html">Skills</a>
+            <a href="education.html">Education</a>
+            <a href="experience.html">Experience</a>
+            <a href="contact.html">Contact</a>
         </nav>
     </header>
+
     <section class="home">
         <div class="home-img">
-            <img src="main.jpg" alt="Profile Picture">
+            <img src="main.jpg" alt="Ernest — Profile Picture">
         </div>
         <div class="home-content">
-            <h1>Hi, It's <span>Ernest</span></h1>
+            <h1>Hi, I'm <span>Ernest</span></h1>
             <h3 class="typing-text">I'm a <span></span></h3>
-            <p>Welcome to my portfolio website. I create innovative solutions and bringing ideas to life through code.</p>
+            <p>Welcome to my portfolio. I create innovative solutions and bring ideas to life through code, design, and visual storytelling.</p>
             <div class="social-icons">
-                <a target="_blank" href="https://www.linkedin.com/in/ernestgitonga" rel="noopener noreferrer" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-                <a target="_blank" href="https://github.com/africxn" rel="noopener noreferrer" title="GitHub"><i class="fa-brands fa-github"></i></a>
-                <a target="_blank" href="https://t.me/afrxcan" rel="noopener noreferrer" title="Telegram"><i class="fa-brands fa-telegram"></i></a>
-                <a target="_blank" href="https://www.instagram.com/git.o.nga?igsh=MXhzYm16a2Y5azgwag==&utm_source=qr" rel="noopener noreferrer" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/ernestgitonga" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/africxn" target="_blank" rel="noopener noreferrer" title="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://t.me/afrxcan" target="_blank" rel="noopener noreferrer" title="Telegram">
+                    <i class="fa-brands fa-telegram"></i>
+                </a>
+                <a href="https://www.instagram.com/git.o.nga?igsh=MXhzYm16a2Y5azgwag==&utm_source=qr" target="_blank" rel="noopener noreferrer" title="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
             </div>
-            <a href="contact.html" class="btn">Hire me</a>
+            <a href="contact.html" class="btn">Hire Me</a>
         </div>
     </section>
+
+    <script>
+        // Sticky header background on scroll
+        const header = document.querySelector('header');
+        window.addEventListener('scroll', () => {
+            header.style.background = window.scrollY > 20
+                ? 'rgba(8,8,8,0.95)'
+                : 'rgba(8,8,8,0.75)';
+        });
+    </script>
 </body>
 </html>
