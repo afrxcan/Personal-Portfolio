@@ -5,7 +5,7 @@ A premium, minimalist portfolio showcasing expertise in Full-Stack Web Developme
 ---
 
 ## 🗂️ Project Structure
-CAPSTONE-PROJ-1/
+Personal-Portfolio/
 ├── index.html       → Home page & Dynamic typing animation
 ├── services.html    → Service offerings & Optimized SVG iconography
 ├── skills.html      → Technical proficiency & Progress visualization
