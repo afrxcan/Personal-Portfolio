@@ -5,6 +5,7 @@ A premium, minimalist portfolio showcasing expertise in Full-Stack Web Developme
 ---
 
 ## 🗂️ Project Structure
+```
 Personal-Portfolio/
 ├── index.html       → Home page & Dynamic typing animation
 ├── services.html    → Service offerings & Optimized SVG iconography
@@ -14,6 +15,7 @@ Personal-Portfolio/
 ├── contact.html     → International-ready lead generation form
 ├── style.css        → Core design system & Responsive layout logic
 └── main.jpg         → Professional profile asset
+```
 
 ## ✨ Features
 
@@ -41,12 +43,6 @@ Personal-Portfolio/
 | **Root Variables** | Centralized color palette control (`--red`, `--gold`, `--bg`) |
 | **Bézier Transitions** | Smooth hover states and custom timeline animations |
 | **Media Queries** | Mobile-first adjustments ensuring 100% readability on all devices |
-
-### JavaScript
-| Concept | Where it's used |
-|---------|----------------|
-| **requestAnimationFrame** | Throttled scroll performance for the glassmorphism header |
-| **Array Iteration** | Typing animation logic for the dynamic hero sub-headline |
 
 ---
 
